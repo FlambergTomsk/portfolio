@@ -17,8 +17,8 @@
 </template>
 <script>
 
-import Footer from '~/components/widgets/Footer';
-import Header from '~/components/widgets/Header';
+import Footer from '~/components/landing/Footer';
+import Header from '~/components/landing/Header';
 
 export default {
   components: {

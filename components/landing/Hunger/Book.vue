@@ -25,7 +25,7 @@
                 :is-input="true"
                 rules="required|email"
                 :name="$t('hunger.book.emailField')"
-                class="grid__email  grid__field"
+                class="grid__email grid__field"
               />
               <custom-area
                 v-model="orderPhone"
@@ -34,7 +34,7 @@
                 :is-input="true"
                 rules="required|phone"
                 :name="$t('hunger.book.phoneField')"
-                class="grid__phone  grid__field"
+                class="grid__phone grid__field"
               />
               <custom-drop
                 v-model="orderPeople"
@@ -124,17 +124,7 @@ export default {
   name: 'Book',
   directives: { mask },
   data() {
-    const now = new Date();
-    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-    const minDate = new Date(today);
-    minDate.setMonth(minDate.getMonth());
-    const maxDate = new Date(today);
-    maxDate.setMonth(maxDate.getMonth() + 2);
-    maxDate.setDate(15);
     return {
-      min: minDate,
-      max: maxDate,
-      time: new Date(),
       orderName: '',
       orderEmail: '',
       orderPhone: '',
@@ -167,8 +157,7 @@ export default {
           message: this.errorAny,
           name: this.orderName,
         });
-      } else
-      if (this.orderDate !== '' && this.orderTime !== '' && this.orderPeople !== '') {
+      } else {
         this.ShowModal({
           key: modals.booking,
           name: this.orderName,

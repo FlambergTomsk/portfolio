@@ -324,9 +324,6 @@ export default {
     openMenu() {
       this.isOpenSideBar = !this.isOpenSideBar;
     },
-    hide() {
-      this.isOpenSideBar = !this.isOpenSideBar;
-    },
     handleScroll() {
       const obj = document.querySelector('.panel');
       const burger = document.querySelector('.content__burger');
@@ -484,6 +481,11 @@ export default {
         height: 50px;
         margin: 0 auto;
         top: 0;
+      }
+      &__left, .panel__right{
+        display: flex;
+        align-items: center;
+        border-bottom: none;
       }
     }
   }

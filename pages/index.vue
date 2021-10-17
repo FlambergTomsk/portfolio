@@ -46,13 +46,13 @@
   </div>
 </template>
 <script>
-import About from '~/components/widgets/Hunger/About';
-import Contacts from '~/components/widgets/Hunger/Contacts';
-import Events from '~/components/widgets/Hunger/Events';
-import Book from '~/components/widgets/Hunger/Book';
-import Menu from '~/components/widgets/Hunger/Menu';
-import Team from '~/components/widgets/Hunger/Team';
-import Specialties from '~/components/widgets/Hunger/Specialties';
+import About from '~/components/landing/Hunger/About';
+import Contacts from '~/components/landing/Hunger/Contacts';
+import Events from '~/components/landing/Hunger/Events';
+import Book from '~/components/landing/Hunger/Book';
+import Menu from '~/components/landing/Hunger/Menu';
+import Team from '~/components/landing/Hunger/Team';
+import Specialties from '~/components/landing/Hunger/Specialties';
 
 export default {
   components: {
@@ -64,5 +64,8 @@ export default {
 <style lang="scss" scoped>
 .hunger{
   margin: 0 auto;
+}
+.content__section {
+  padding-top: 50px;
 }
 </style>
