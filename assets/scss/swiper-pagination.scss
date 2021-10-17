@@ -1,0 +1,24 @@
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  background: $yellow;
+  opacity: 1;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 0;
+}
+
+@include _575{
+  .swiper-button-next,
+  .swiper-container-rtl .swiper-button-prev {
+    right: 0px;
+    left: auto;
+  }
+  .swiper-button-prev,
+  .swiper-container-rtl .swiper-button-next {
+    left: 0px;
+    right: auto;
+  }
+}
