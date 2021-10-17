@@ -63,10 +63,6 @@ export default {
 
 <style lang="scss" scoped>
 .hunger{
-  //max-width: 1440px;
   margin: 0 auto;
-}
-.team{
- //@include container;
 }
 </style>
